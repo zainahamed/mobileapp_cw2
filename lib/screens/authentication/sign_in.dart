@@ -28,8 +28,8 @@ class _SignInState extends State<SignIn> {
         backgroundColor: bgBlack,
         appBar: AppBar(
           title: const Text(
-            "SIGN IN",
-            style: TextStyle(color: mainBlue, fontWeight: FontWeight.w800),
+            "Sign In to Sports News 24!",
+            style: TextStyle(color: mainPrimaryDark, fontWeight: FontWeight.w800),
           ),
           backgroundColor: bgBlack,
         ),
@@ -38,6 +38,9 @@ class _SignInState extends State<SignIn> {
             padding: const EdgeInsets.only(left: 15, bottom: 50),
             child: Column(
               children: [
+                const SizedBox(
+                  height: 120,
+                ),
                 const Text(
                   descripion,
                   style: descriptionStyle,
@@ -58,7 +61,7 @@ class _SignInState extends State<SignIn> {
                         children: [
                           //email
                           TextFormField(
-                            style: TextStyle(color: Colors.white),
+                            style: TextStyle(color: Colors.black),
                             decoration: textInputdecoration,
                             validator: (val) => val?.isEmpty == true
                                 ? "Enter a valid email"
@@ -75,7 +78,7 @@ class _SignInState extends State<SignIn> {
                           //password
                           TextFormField(
                             obscureText: true,
-                            style: TextStyle(color: Colors.white),
+                            style: TextStyle(color: Colors.black),
                             decoration: textInputdecoration.copyWith(
                                 hintText: "Password"),
                             validator: (val) => val!.length < 6
@@ -98,22 +101,22 @@ class _SignInState extends State<SignIn> {
                           const SizedBox(
                             height: 10,
                           ),
-                          const Text(
-                            "Log with Google",
-                            style: descriptionStyle,
-                          ),
-                          const SizedBox(
-                            height: 10,
-                          ),
-                          GestureDetector(
-                            //signin method
-                            onTap: () {},
-                            child: Center(
-                                child: Image.asset(
-                              'assets/images/google.png',
-                              height: 50,
-                            )),
-                          ),
+                          // const Text(
+                          //   "Log with Google",
+                          //   style: descriptionStyle,
+                          // ),
+                          // const SizedBox(
+                          //   height: 10,
+                          // ),
+                          // GestureDetector(
+                          //   //signin method
+                          //   onTap: () {},
+                          //   child: Center(
+                          //       child: Image.asset(
+                          //     'assets/images/google.png',
+                          //     height: 50,
+                          //   )),
+                          // ),
                           const SizedBox(
                             height: 10,
                           ),
@@ -136,7 +139,7 @@ class _SignInState extends State<SignIn> {
                                 child: const Text(
                                   "Register",
                                   style: TextStyle(
-                                      color: mainBlue,
+                                      color: mainPrimaryDark,
                                       fontWeight: FontWeight.w600),
                                 ),
                               )
@@ -162,10 +165,10 @@ class _SignInState extends State<SignIn> {
                               height: 40,
                               width: 200,
                               decoration: (BoxDecoration(
-                                  color: textLight,
+                                  color: Colors.white,
                                   borderRadius: BorderRadius.circular(100),
                                   border:
-                                      Border.all(width: 2, color: mainYellow))),
+                                      Border.all(width: 2, color: mainPrimaryDark))),
                               child: const Center(
                                   child: Text(
                                 "LOG IN",
@@ -186,10 +189,10 @@ class _SignInState extends State<SignIn> {
                               height: 40,
                               width: 200,
                               decoration: (BoxDecoration(
-                                  color: textLight,
+                                  color: Colors.white,
                                   borderRadius: BorderRadius.circular(100),
                                   border:
-                                      Border.all(width: 2, color: mainYellow))),
+                                      Border.all(width: 2, color: mainPrimaryDark))),
                               child: const Center(
                                   child: Text(
                                 "GUEST USER",

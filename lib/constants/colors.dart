@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 
-const Color bgBlack = Color(0xff121212);
-const Color textLight = Color(0xff9E9595);
-const Color mainYellow = Color(0xffFFCE00);
-const Color mainBlue = Color(0xff4285F4);
+const Color bgBlack = Color(0xffffffff);
+const Color textLight = Color(0xff3c343f);
+const Color mainPrimary = Color(0xffdbd4de);
+const Color mainPrimaryDark = Color(0xff8b4196);
+
+const Color textDark = Color(0xff000000);
+const Color inputField = Color(0xffede3fa);

@@ -6,17 +6,17 @@ const TextStyle descriptionStyle =
 
 const textInputdecoration = InputDecoration(
   hintText: "Email",
-  hintStyle: TextStyle(color: textLight, fontSize: 15),
-  fillColor: bgBlack,
+  hintStyle: TextStyle(color: textDark, fontSize: 15),
+  fillColor: mainPrimary,
   filled: true,
   enabledBorder: OutlineInputBorder(
-    borderSide: BorderSide(color: mainYellow, width: 1),
+    borderSide: BorderSide(color: textLight, width: 1),
     borderRadius: BorderRadius.all(
       Radius.circular(100),
     ),
   ),
   focusedBorder: OutlineInputBorder(
-    borderSide: BorderSide(color: mainYellow, width: 1),
+    borderSide: BorderSide(color: textLight, width: 1),
     borderRadius: BorderRadius.all(
       Radius.circular(100),
     ),

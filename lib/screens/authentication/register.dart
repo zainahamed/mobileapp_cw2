@@ -28,8 +28,8 @@ class _RegisterState extends State<Register> {
         backgroundColor: bgBlack,
         appBar: AppBar(
           title: const Text(
-            "Register",
-            style: TextStyle(color: mainBlue, fontWeight: FontWeight.w800),
+            "Register to Sports News 24",
+            style: TextStyle(color: mainPrimaryDark, fontWeight: FontWeight.w800),
           ),
           backgroundColor: bgBlack,
         ),
@@ -38,6 +38,9 @@ class _RegisterState extends State<Register> {
             padding: const EdgeInsets.only(left: 15, bottom: 50),
             child: Column(
               children: [
+                const SizedBox(
+                  height: 120,
+                ),
                 const Text(
                   descripion,
                   style: descriptionStyle,
@@ -61,7 +64,7 @@ class _RegisterState extends State<Register> {
                         children: [
                           //email
                           TextFormField(
-                            style: TextStyle(color: Colors.white),
+                            style: TextStyle(color: Colors.black),
                             decoration: textInputdecoration,
                             validator: (val) => val?.isEmpty == true
                                 ? "Enter a valid email"
@@ -78,7 +81,7 @@ class _RegisterState extends State<Register> {
                           //password
                           TextFormField(
                             obscureText: true,
-                            style: TextStyle(color: Colors.white),
+                            style: TextStyle(color: Colors.black),
                             decoration: textInputdecoration.copyWith(
                                 hintText: "Password"),
                             validator: (val) => val!.length < 6
@@ -98,25 +101,25 @@ class _RegisterState extends State<Register> {
                             error,
                             style: TextStyle(color: Colors.red),
                           ),
-                          const Text(
-                            "Log with Google",
-                            style: descriptionStyle,
-                          ),
-                          const SizedBox(
-                            height: 10,
-                          ),
-                          GestureDetector(
-                            //signin method
-                            onTap: () {},
-                            child: Center(
-                                child: Image.asset(
-                              'assets/images/google.png',
-                              height: 50,
-                            )),
-                          ),
-                          const SizedBox(
-                            height: 10,
-                          ),
+                          // const Text(
+                          //   "Log with Google",
+                          //   style: descriptionStyle,
+                          // ),
+                          // const SizedBox(
+                          //   height: 10,
+                          // ),
+                          // GestureDetector(
+                          //   //signin method
+                          //   onTap: () {},
+                          //   child: Center(
+                          //       child: Image.asset(
+                          //     'assets/images/google.png',
+                          //     height: 50,
+                          //   )),
+                          // ),
+                          // const SizedBox(
+                          //   height: 10,
+                          // ),
                           //register
                           Row(
                             mainAxisAlignment: MainAxisAlignment.center,
@@ -136,7 +139,7 @@ class _RegisterState extends State<Register> {
                                 child: const Text(
                                   "Login",
                                   style: TextStyle(
-                                      color: mainBlue,
+                                      color: mainPrimaryDark,
                                       fontWeight: FontWeight.w600),
                                 ),
                               )
@@ -160,10 +163,10 @@ class _RegisterState extends State<Register> {
                               height: 40,
                               width: 200,
                               decoration: (BoxDecoration(
-                                  color: textLight,
+                                  color: Colors.white,
                                   borderRadius: BorderRadius.circular(100),
                                   border:
-                                      Border.all(width: 2, color: mainYellow))),
+                                      Border.all(width: 2, color: mainPrimaryDark))),
                               child: const Center(
                                   child: Text(
                                 "Register",
